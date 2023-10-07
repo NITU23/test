@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Navbar from './components/Navbar'
-import News from './components/News'
+import Navbar from './components/Navbar.js'
+import News from './components/News.js'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 const App = () => {
   const [pageSize, setPageSize] = useState(6)
