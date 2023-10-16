@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ViewCart = () => {
+const ViewCart = (props) => {
   return (
     <div>
         <div>
-            This is Your Cart
+
         </div>
 
     </div>

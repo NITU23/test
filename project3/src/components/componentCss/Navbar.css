@@ -1,0 +1,11 @@
+.circle {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+  }
+
+  .text {
+    margin: auto;
+  }
