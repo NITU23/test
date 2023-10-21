@@ -17,7 +17,7 @@ const Item = () => {
           <div className="d-flex justify-content-between">
             <Link to="" onClick={addToCart} className="btn btn-primary cart">Add to cart
               <i className="mx-3 bi bi-cart-plus"></i></Link>
-            <span>Price : <i class="fa fa-inr"></i> 99/- </span>
+            <span>Price : <i className="fa fa-inr"></i> 99/- </span>
           </div>
         </div>
       </div>
