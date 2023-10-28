@@ -2,7 +2,7 @@ import React from 'react'
 
 const Signup = () => {
   return (
-    <div>This is signup commit </div>
+    <div>This is  commit </div>
   )
 }
 
