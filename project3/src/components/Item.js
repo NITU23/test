@@ -1,13 +1,20 @@
 import React, { useState } from 'react'
-import CSS from '../components/componentCss/item.css'
+import '../components/componentCss/item.css'
 import { Link } from 'react-router-dom'
+import cartContext from '../Contexts/cartContexts'
+import { useContext } from 'react'
 const Item = () => {
   let [name, setName] = useState('Product')
   let [url, setUrl] = useState('https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=600')
-  let addToCart= () => {
+  const data = useContext(cartContext)
+
+  let addToCart = () => {
     console.log('helo added to cart')
+    data.setItem([...data.item, '9999'])
   }
-   return (
+
+  return (
+
     <div>
       <div className="card mx-5 my-5" style={{ width: 25 + 'rem' }}>
         <img src={url} className="card-img-top" alt="..." />
@@ -17,7 +24,7 @@ const Item = () => {
           <div className="d-flex justify-content-between">
             <Link to="" onClick={addToCart} className="btn btn-primary cart">Add to cart
               <i className="mx-3 bi bi-cart-plus"></i></Link>
-            <span>Price : <i class="fa fa-inr"></i> 99/- </span>
+            <span>Price : <i className="fa fa-inr"></i> 99/- </span>
           </div>
         </div>
       </div>
