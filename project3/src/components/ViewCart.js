@@ -9,7 +9,6 @@ const ViewCart = () => {
   return (
     <div>
       <div>
-        <p>Welcome to Your Cart</p>
         {data.item && data.item.length > 0 ? (
          <ViewAddedItem items={data.item}/>
         ) : (

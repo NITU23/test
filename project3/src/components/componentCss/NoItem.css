@@ -1,0 +1,13 @@
+.img{
+    display: block;
+     width: 400px;
+     margin: auto;
+     height: 400px;
+}
+.title, .text{
+    display: block;
+    text-align: center;
+}
+.card{
+    border: none;
+}

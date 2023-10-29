@@ -11,7 +11,9 @@ const Item = () => {
   let addToCart = () => {
     console.log('helo added to cart')
     data.setItem([...data.item, '9999'])
+    data.setAddedItem(true)
   }
+
 
   return (
 
